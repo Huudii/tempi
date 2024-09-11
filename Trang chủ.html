@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/ico/apple-icon-57x57.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/ico/apple-icon-60x60.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/ico/apple-icon-72x72.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/ico/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/ico/apple-icon-114x114.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/ico/apple-icon-120x120.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/ico/apple-icon-144x144.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/ico/apple-icon-152x152.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/ico/apple-icon-180x180.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/ico/android-icon-192x192.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/ico/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/ico/favicon-96x96.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/ico/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/ico/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>Trang chủ</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header sticky">
+      <div class="main-page">
+        <div class="body">
+          <img
+            src="./assets/img/Logo.svg"
+            alt="Tempi"
+            class="logo header__logo" />
+          <nav class="nav">
+            <ul id="navbar__list--pc">
+              <li>
+                <a href="Trang chủ.html">Trang chủ</a>
+              </li>
+              <li>
+                <a href="##">Về chúng tôi</a>
+              </li>
+              <li>
+                <a href="##">Dịch vụ</a>
+              </li>
+              <li>
+                <a href="##">Liên hệ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- TABLET & MOBILE  -->
+    <div class="mobile-header">
+      <input
+        type="checkbox"
+        name="menu__checkbox"
+        id="menu__checkbox"
+        class="menu__checkbox"
+        hidden />
+
+      <label for="menu__checkbox">
+        <i
+          class="fa-solid fa-bars fa-lg menu__header--icon"
+          style="color: #fff; z-index: 2;"></i>
+      </label>
+      <!-- overlay(phủ) -->
+      <label for="menu__checkbox" class="menu__overlay"></label>
+      <!-- menu  drawer  -->
+      <div class="menu-drawer">
+        <!-- menu top -->
+        <div class="menu__drawer--top">
+          <img
+            src="./assets/img/Logo.svg"
+            alt="Tempi"
+            class="logo header__logo" />
+          <!-- icon close -->
+          <label for="menu__checkbox">
+            <i
+              class="fa-regular fa-circle-xmark fa-2xl"
+              style="color: #fff"></i>
+          </label>
+        </div>
+
+        <ul id="navbar__list--mobile"></ul>
+        <!-- sử dụng js để cpy navbar  -->
+        <script>
+          const navPC = document.querySelector("#navbar__list--pc");
+          const navMobile = document.querySelector("#navbar__list--mobile");
+          // copy
+          navMobile.innerHTML = navPC.innerHTML;
+        </script>
+      </div>
+    </div>
+    <!-- main -->
+              <main class="main">
+      <!-- hero -->
+      <div class="hero">
+        <div class="main-page">
+          <div class="body">
+            <!-- hero-lef -->
+            <div class="content-block">
+              <h1 class="heading">
+                Kiến tạo nên các
+                <span>giải pháp công nghệ</span>
+                dễ dàng sử dụng & quản lý
+              </h1>
+              <p class="desc">
+                Tempi - Thương mại điện tử và công nghệ là một đơn vị đầu tư và
+                phát triển công nghệ tại Việt Nam, đem đến cho bạn những giải
+                pháp công nghệ dễ dàng sử dụng và quản lý. Chúng tôi cung cấp
+                các dịch vụ từ thiết kế đến triển khai, tư vấn và bảo hành cho
+                các doanh nghiệp.
+              </p>
+              <div class="gr-team">
+                <div class="action">
+                  <a href="#!" class="btn team">Tìm hiểu thêm</a>
+                  <a href="#!" class="btn team1">Liên hệ</a>
+                </div>
+              </div>
+            </div>
+            <!-- hero-right -->
+            <div class="media-block">
+              <img src="./assets/img/image.svg" alt="image" class="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- info -->
+      <div class="info">
+        <div class="main-page">
+          <div class="body">
+            <div class="box">
+              <img src="./assets/icon/is.svg" alt="IT-Support" class="icon" />
+              <p class="desc">IT Support</p>
+              <p class="desc r1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+            <div class="box">
+              <img
+                src="./assets/icon/tc.svg"
+                alt="Technolog-Consulting"
+                class="icon" />
+              <p class="desc">Technology Consulting</p>
+              <p class="desc r1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+            <div class="box">
+              <img
+                src="./assets/icon/sd.svg"
+                alt="Strategy-Discovery"
+                class="icon" />
+              <p class="desc">Strategy & Discovery</p>
+              <p class="desc r1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+            <div class="box">
+              <img
+                src="./assets/icon/bi.svg"
+                alt="Business-Intelligence"
+                class="icon" />
+              <p class="desc">Business Intelligence</p>
+              <p class="desc r1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- service -->
+      <div class="service">
+        <div class="main-page">
+          <div class="body">
+            <div class="content-block">
+              <p class="desc welcome">
+                <span>Welcome to Tempi</span>
+              </p>
+              <h2 class="heading">
+                Mang lại các giải pháp về công nghệ cho các doanh nghiệp
+              </h2>
+              <p class="desc lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+              <div class="noidung">
+                <div class="nd">
+                  <img
+                    src="./assets/icon/muiten.svg"
+                    alt="icon"
+                    class="ablum" />
+                  <p class="desc sv">
+                    Chúng tôi phục vụ các doanh nghiệp SMEs, các doanh nghiệp
+                    toàn cầu và các nhóm nội bộ
+                  </p>
+                </div>
+                <div class="nd">
+                  <img
+                    src="./assets/icon/muiten.svg"
+                    alt="icon"
+                    class="ablum" />
+                  <p class="desc sv">
+                    Chúng tôi phục vụ các doanh nghiệp SMEs, các doanh nghiệp
+                    toàn cầu và các nhóm nội bộ
+                  </p>
+                </div>
+                <div class="nd">
+                  <img
+                    src="./assets/icon/muiten.svg"
+                    alt="icon"
+                    class="ablum" />
+                  <p class="desc sv">
+                    Chúng tôi phục vụ các doanh nghiệp SMEs, các doanh nghiệp
+                    toàn cầu và các nhóm nội bộ
+                  </p>
+                </div>
+                <div class="nd">
+                  <img
+                    src="./assets/icon/muiten.svg"
+                    alt="icon"
+                    class="ablum" />
+                  <p class="desc sv">
+                    Chúng tôi phục vụ các doanh nghiệp SMEs, các doanh nghiệp
+                    toàn cầu và các nhóm nội bộ
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="media-block">
+              <img src="./assets/img/img2.svg" alt="img" class="ablum-2" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- assistance -->
+      <div class="assistance">
+        <div class="main-page">
+          <h2 class="heading">Dịch vụ của chúng tôi</h2>
+        </div>
+      </div>
+      <!-- assistance-team -->
+      <div class="assistance-team">
+        <div class="main-page">
+          <div class="body">
+            <div class="box-1">
+              <div class="box">
+                <img src="./assets/icon/IT.svg" alt="icon" class="album bg" />
+                <p class="strong">IT Solution</p>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <div>
+                  <a href="#!" class="lk">Read More</a>
+                </div>
+              </div>
+              <div class="box">
+                <img src="./assets/icon/web.svg" alt="icon" class="album bg" />
+                <p class="strong"><strong>Web Development</strong></p>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <div>
+                  <a href="#!" class="lk">Read More</a>
+                </div>
+              </div>
+              <div class="box">
+                <img src="./assets/icon/Dig.svg" alt="icon" class="album bg" />
+                <p class="strong"><strong>Digital Marketing</strong></p>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <div>
+                  <a href="#!" class="lk">Read More</a>
+                </div>
+              </div>
+              <div class="box">
+                <img
+                  src="./assets/icon/Cyber.svg"
+                  alt="icon"
+                  class="album bg" />
+                <p class="strong">Cyber Security</p>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <div>
+                  <a href="#!" class="lk">Read More</a>
+                </div>
+              </div>
+              <div class="box">
+                <img src="./assets/icon/Apps.svg" alt="icon" class="album bg" />
+                <p class="strong"><strong>Apps Development</strong></p>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <div>
+                  <a href="#!" class="lk">Read More</a>
+                </div>
+              </div>
+              <div class="box">
+                <img
+                  src="./assets/icon/Networ.svg"
+                  alt="icon"
+                  class="album bg" />
+                <p class="strong"><strong>Networking Services</strong></p>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <div>
+                  <a href="#!" class="lk">Read More</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- activity -->
+      <div class="activity">
+        <div class="main-page">
+          <div class="body">
+            <p class="desc">
+              <strong>10+</strong>
+              <br />
+              Năm hoạt động
+            </p>
+            <p class="desc">
+              <strong>100</strong>
+              <br />
+              Dự án hoàn thành
+            </p>
+            <p class="desc">
+              <strong>50+</strong>
+              <br />
+              Thành viênThành viên
+            </p>
+            <p class="desc">
+              <strong>80+</strong>
+              <br />
+              Khách hàng hài lòng
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- client -->
+      <div class="client">
+        <div class="main-page">
+          <h2 class="heading">Khách hàng nói gì về chúng tôi</h2>
+        </div>
+      </div>
+      <!-- client-team -->
+      <div class="client-team">
+        <div class="main-page">
+          <div class="body">
+            <div class="item__1">
+              <div class="client">
+                <div class="icon iicon">
+                  <img src="./assets/icon/peo.svg" alt="client" class="ha bl" />
+                  <img src="./assets/icon/''.svg" alt="client" class="haha" />
+                </div>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <p class="desc desc__ok">
+                  Hailey Nguyen
+                  <span>CEO Founder</span>
+                </p>
+              </div>
+              <div class="client">
+                <div class="icon iicon">
+                  <img src="./assets/icon/peo.svg" alt="client" class="ha bl" />
+                  <img src="./assets/icon/''.svg" alt="client" class="haha" />
+                </div>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <p class="desc desc__ok">
+                  Hailey Nguyen
+                  <span>CEO Founder</span>
+                </p>
+              </div>
+              <div class="client">
+                <div class="icon iicon">
+                  <img src="./assets/icon/peo.svg" alt="client" class="ha bl" />
+                  <img src="./assets/icon/''.svg" alt="client" class="haha" />
+                </div>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <p class="desc desc__ok">
+                  Hailey Nguyen
+                  <span>CEO Founder</span>
+                </p>
+              </div>
+              <div class="client">
+                <div class="icon iicon">
+                  <img src="./assets/icon/peo.svg" alt="client" class="ha bl" />
+                  <img src="./assets/icon/''.svg" alt="client" class="haha" />
+                </div>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <p class="desc desc__ok">
+                  Hailey Nguyen
+                  <span>CEO Founder</span>
+                </p>
+              </div>
+              <div class="client">
+                <div class="icon iicon">
+                  <img src="./assets/icon/peo.svg" alt="client" class="ha bl" />
+                  <img src="./assets/icon/''.svg" alt="client" class="haha" />
+                </div>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <p class="desc desc__ok">
+                  Hailey Nguyen
+                  <span>CEO Founder</span>
+                </p>
+              </div>
+              <div class="client">
+                <div class="icon iicon">
+                  <img src="./assets/icon/peo.svg" alt="client" class="ha bl" />
+                  <img src="./assets/icon/''.svg" alt="client" class="haha" />
+                </div>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <p class="desc desc__ok">
+                  Hailey Nguyen
+                  <span>CEO Founder</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="footer">
+        <div class="main-page">
+          <div class="body">
+            <div class="box box1">
+              <img src="./assets/img/logo.svg" alt="logo" class="logo" />
+              <p class="desc list">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+            <div class="box box2">
+              <h3 class="title">Dịch vụ của chúng tôi</h3>
+              <ul class="list">
+                <li>
+                  <a href="#!">IT Solution</a>
+                  <a href="#!">Web Development</a>
+                  <a href="#!">Digital Marketing</a>
+                  <a href="#!">Cyber Security</a>
+                  <a href="#!">Apps Development</a>
+                </li>
+              </ul>
+            </div>
+            <div class="box box3">
+              <h3 class="title">Thông tin liên hệ</h3>
+              <ul class="list">
+                <li>
+                  <a href="#!">
+                    <i
+                      class="fa-sharp fa-solid fa-phone-volume"
+                      style="color: #fff"></i>
+                    <p class="them">012.3344.566</p>
+                  </a>
+                  <a href="#!">
+                    <i class="fa-solid fa-envelope" style="color: #fff"></i>
+                    <p class="them">support@tempi.vn</p>
+                  </a>
+                  <a href="#!">
+                    <i
+                      class="fa-solid fa-map-location-dot"
+                      style="color: #fff"></i>
+                    <p class="them">Dĩ An - Bình Dương</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
